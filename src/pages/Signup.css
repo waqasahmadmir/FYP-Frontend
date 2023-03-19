@@ -1,0 +1,164 @@
+.signup__image--container {
+  background-image: url("../images/zyro-bRkEc7CQ41w-unsplash.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+.signup__form--container,
+.login__form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login__image--container {
+  background-image: url(https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  height: 100vh;
+  background-size: cover;
+}
+
+h1.thick {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 756px) {
+  .login__image--container,
+  .signup__image--container {
+    display: none;
+  }
+}
+
+.login-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #830dea;
+  margin-bottom: 20px;
+}
+
+/* CSS styles */
+.name-form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.name-label {
+  font-size: 18px;
+  color: #080908;
+  font-weight: bold;
+}
+
+.name-input {
+  height: 50px;
+  width: 500px;
+  font-size: 16px;
+  color: #567868;
+  border-radius: 5px;
+  border-color: #080808;
+  margin-left: 5%;
+}
+
+.name-input:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.email-form-group {
+  margin-bottom: 20px;
+}
+
+.email-label {
+  font-size: 18px;
+  color: #080908;
+  font-weight: bold;
+}
+
+.email-input {
+  height: 50px;
+  width: 500px;
+  font-size: 16px;
+  color: #6a9a9a;
+  border-radius: 5px;
+  border-color: #060606;
+  box-shadow: none;
+  margin-left: 5%;
+}
+
+.email-input:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+/* CSS styles */
+.password-form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.password-label {
+  font-size: 18px;
+  color: #080908;
+  font-weight: bold;
+}
+
+.password-input {
+  height: 50px;
+  width: 500px;
+  font-size: 16px;
+  color: #567868;
+  border-radius: 5px;
+  border-color: #080808;
+  margin-left: 5%;
+}
+
+.password-input:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.create-account-form-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.create-account-button {
+  margin-top: 20px;
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #090a09;
+  background-color: #5aa2ea;
+  border-color: #060606;
+}
+
+.create-account-button:hover {
+  background-color: #4594e8;
+  border-color: #070708;
+}
+
+.create-account-button:disabled {
+  opacity: 0.6;
+}
+
+.login-redirect {
+  margin-top: 3%;
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-link {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+/* home https://res.cloudinary.com/learn-code-10/image/upload/v1653947013/yqajnhqf7usk56zkwqi5.png */
+/* https://res.cloudinary.com/learn-code-10/image/upload/v1654093280/xkia6f13xxlk5xvvb5ed.png sale */
