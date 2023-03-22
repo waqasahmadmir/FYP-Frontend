@@ -80,16 +80,6 @@ function Navigation() {
                   ></i>
                 </Nav.Link>
                 <NavDropdown title={`${user.name}`} id="basic-nav-dropdown">
-                  {user.isAdmin && (
-                    <>
-                      <LinkContainer to="/admin">
-                        <NavDropdown.Item>Dashboard</NavDropdown.Item>
-                      </LinkContainer>
-                      <LinkContainer to="/new-product">
-                        <NavDropdown.Item>Create Product</NavDropdown.Item>
-                      </LinkContainer>
-                    </>
-                  )}
                   {!user.isAdmin && (
                     <>
                       <LinkContainer to="/cart">

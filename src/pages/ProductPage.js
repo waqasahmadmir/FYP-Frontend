@@ -44,11 +44,13 @@ function ProductPage() {
     1024: { items: 3 },
   };
 
-  <img
-    className="product__carousel--image"
-    src={product.image}
-    onDragStart={handleDragStart}
-  />;
+  const images = product.image.map((picture) => (
+    <img
+      className="product__carousel--image"
+      src={picture}
+      onDragStart={handleDragStart}
+    />
+  ));
 
   let similarProducts = [];
   if (similar) {
@@ -60,17 +62,30 @@ function ProductPage() {
   }
 
   return (
-    <Container className="pt-4" style={{ position: "relative" }}>
+    <Container className="thisone" style={{ position: "relative" }}>
       <Row>
         <Col lg={6}>
           <AliceCarousel
             mouseTracking
             items={product.image}
             controlsStrategy="alternate"
-          />
+            className="alice-carousel__wrapper"
+            dotsDisabled={true}
+            buttonsDisabled={true}
+          >
+            {product.image.map((item, index) => (
+              <img
+                src={item}
+                alt={product.title}
+                key={index}
+                style={{ width: "75%", height: "auto" }} // add this style
+              />
+            ))}
+          </AliceCarousel>
         </Col>
         <Col lg={6} className="pt-4">
-          <h1>{product.productname}</h1>
+          <h1 class="product-heading">{product.productname}</h1>
+
           <p>
             <Badge bg="primary">{product.productcategory}</Badge>
           </p>
@@ -120,7 +135,7 @@ function ProductPage() {
         </Col>
       </Row>
       <div className="my-4">
-        <h2>Similar Products</h2>
+        <h2 className="h2">Similar Products</h2>
         <div className="d-flex justify-content-center align-items-center flex-wrap">
           <AliceCarousel
             mouseTracking

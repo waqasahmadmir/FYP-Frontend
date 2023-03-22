@@ -1,6 +1,7 @@
 import React from "react";
 import { Badge, Card } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import "./ProductPreview.css";
 
 function ProductPreview({
   _id,
@@ -12,7 +13,7 @@ function ProductPreview({
   return (
     <LinkContainer
       to={`/product/${_id}`}
-      style={{ cursor: "pointer", width: "13rem", margin: "10px" }}
+      style={{ cursor: "pointer", width: "200px", margin: "30px" }}
     >
       <Card style={{ width: "20rem", margin: "10px" }}>
         <Card.Img
@@ -25,13 +26,10 @@ function ProductPreview({
         <Card.Body>
           <Card.Title>{productname}</Card.Title>
           <>
-            <Badge bg="warning" text="dark">
+            <div className="mydiv">
+              {"$" + productprice + "  "}
               {productcategory}
-            </Badge>
-
-            <Badge bg="warning" text="dark">
-              {productprice}
-            </Badge>
+            </div>
           </>
         </Card.Body>
       </Card>

@@ -34,27 +34,34 @@ function CategoryPage() {
     product.productname.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  function ProductSearch({ _id, productcategory, productname, image }) {
+  function ProductSearch({
+    _id,
+    productcategory,
+    productname,
+    image,
+    productprice,
+  }) {
     return (
       <ProductPreview
         _id={_id}
         productcategory={productcategory}
         productname={productname}
         image={image}
+        productprice={productprice}
       />
     );
   }
 
   return (
     <div className="category-page-container">
-      <div
+      {/* <div
         className={`pt-3 ${productcategory}-banner-container category-banner-container`}
       >
         <h1 className="text-center">
           {productcategory.charAt(0).toUpperCase() + productcategory.slice(1)}
         </h1>
-      </div>
-      <div className="filters-container d-flex justify-content-center pt-4 pb-4">
+      </div> */}
+      <div class="filters-container d-flex justify-content-center pt-4 pb-4">
         <input
           type="search"
           placeholder="Search"

@@ -7,8 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(4, 4, 4);
   font-size: 30px;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
   margin-top: 30px;
@@ -32,7 +33,7 @@ img.card-img-top.product-preview-img {
 }
 
 .sale__banner--container img {
-  max-width: 1200px;
+  width: 95%;
   display: block;
   margin: 0 auto;
 }

@@ -5,7 +5,7 @@ const categories = [
   },
   {
     name: "Phones",
-    img: "https://res.cloudinary.com/dcmlraewz/image/upload/v1678203793/blue_modern_smartphone_instagram_post_1_tclncr.png",
+    img: "https://res.cloudinary.com/dcmlraewz/image/upload/v1679415780/blue_modern_smartphone_instagram_post_2_jboaqc.png",
   },
 
   {

@@ -1,6 +1,6 @@
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import React from "react";
+import React, { useState } from "react";
 import { Alert, Col, Container, Row, Table } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import CheckoutForm from "../components/CheckoutForm";
@@ -11,7 +11,9 @@ import {
 } from "../services/appApi";
 import "./CartPage.css";
 
-const stripePromise = loadStripe("your_stripe_publishable_key");
+const stripePromise = loadStripe(
+  "pk_test_51Mj0N1EczbAuP7U0a5QUTsdQYMl52DxZ0xj3qi2NSXoavTstiSknz80qoxvb5dUkPoky9j2vgedlQUC1qTHvlbyB00hUivlP34"
+);
 
 function CartPage() {
   const user = useSelector((state) => state.user);

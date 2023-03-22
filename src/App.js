@@ -6,15 +6,12 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { useDispatch, useSelector } from "react-redux";
-import NewProduct from "./pages/NewProduct";
 import ProductPage from "./pages/ProductPage";
 import CategoryPage from "./pages/CategoryPage";
 import ScrollToTop from "./components/ScrollToTop";
 import CartPage from "./pages/CartPage";
 import OrdersPage from "./pages/OrdersPage";
-import AdminDashboard from "./pages/AdminDashboard";
-import EditProductPage from "./pages/EditProductPage";
-import chatPage from "./pages/chatPage";
+
 import { useEffect } from "react";
 import { io } from "socket.io-client";
 import { addNotification } from "./features/userSlice";
@@ -58,12 +55,7 @@ function App() {
               <Route path="/chat" element={<chatPage />} />
             </>
           )}
-          {/* {user && user.isAdmin && (
-            <>
-              <Route path="/admin" element={<AdminDashboard />} />
-              <Route path="/product/:id/edit" element={<EditProductPage />} />
-            </>
-          )} */}
+
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/category/:category" element={<CategoryPage />} />
 

@@ -24,7 +24,7 @@ function Home() {
         className="home-banner"
       />
       <div className="featured-products-container container mt-4">
-        <h1>Latest Products</h1>
+        <h1 className="h1">Latest Products</h1>
         {/* last products here */}
         <div className="d-flex justify-content-center flex-wrap">
           {lastProducts.map((product) => (
@@ -49,7 +49,7 @@ function Home() {
         <img src="https://res.cloudinary.com/learn-code-10/image/upload/v1654093280/xkia6f13xxlk5xvvb5ed.png" />
       </div>
       <div className="recent-products-container container mt-4">
-        <h2>Categories</h2>
+        <h2 className="h2">Famous Categories</h2>
         <Row>
           {categories.map((category) => (
             <LinkContainer
@@ -58,12 +58,14 @@ function Home() {
               <Col md={4}>
                 <div
                   style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${category.img})`,
-                    gap: "10px",
+                    backgroundImage: `url(${category.img})`,
                   }}
                   className="category-tile"
                 >
-                  {category.name}
+                  <div>
+                    <h3>{category.name}</h3>
+                    <p>{category.description}</p>
+                  </div>
                 </div>
               </Col>
             </LinkContainer>

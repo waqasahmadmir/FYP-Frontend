@@ -13,9 +13,10 @@
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  color: #42b983;
+  color: #02e81d;
+
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
