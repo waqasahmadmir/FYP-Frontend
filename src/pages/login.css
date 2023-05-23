@@ -1,0 +1,102 @@
+.login-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #830dea;
+  margin-bottom: 20px;
+}
+.custom-form-group {
+  margin-bottom: 20px;
+}
+
+.custom-label {
+  font-size: 18px;
+  color: #080908;
+  font-weight: bold;
+}
+
+.custom-input {
+  height: 50px;
+  width: 500px;
+  font-size: 16px;
+  color: #567868;
+  border-radius: 5px;
+  border-color: #080808;
+  margin-left: 5%;
+}
+
+.custom-input:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.email-form-group {
+  margin-bottom: 20px;
+}
+
+.email-label {
+  font-size: 18px;
+  color: #080908;
+  font-weight: bold;
+}
+
+.email-input {
+  height: 50px;
+  width: 500px;
+  font-size: 16px;
+  color: #02dc88;
+  border-radius: 5px;
+  border-color: #060606;
+  box-shadow: none;
+  margin-left: 5%;
+}
+
+.email-input:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.login-form-group {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-button {
+  margin-top: 20px;
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #090a09;
+  background-color: #5aa2ea;
+  border-color: #060606;
+}
+
+.login-button:hover {
+  background-color: #4594e8;
+  border-color: #070708;
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* CSS styles */
+.signup-text {
+  margin-top: 3%;
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-link {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

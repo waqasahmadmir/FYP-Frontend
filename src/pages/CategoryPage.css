@@ -1,0 +1,37 @@
+.category-page-container {
+  min-height: 90vh;
+  margin-top: 80px;
+}
+
+.category-banner-container {
+  height: 350px;
+  background-color: #182e39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.filters-container {
+  background-color: #4f5a5b;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="search"] {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 17px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+input[type="search"]::placeholder {
+  color: #b5b5b5;
+}
+
+input[type="search"]:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
